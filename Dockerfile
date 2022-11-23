@@ -7,8 +7,8 @@ RUN curl -Ls https://sh.jbang.dev | bash -s - app setup \
     && jbang trust add https://github.com/apache/camel/ \
     && jbang app install camel@apache/camel/$CAMEL_REF
 
-# hawtio
-EXPOSE 8888 
+#console
+EXPOSE 8080
 
 ENV PATH=/home/default/.jbang/bin:$PATH
 
